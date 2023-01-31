@@ -1,6 +1,4 @@
-import { Character } from '../../models/character';
 import { Component } from '../component';
-import { allCharacters } from '../../characters';
 
 export class Card extends Component {
   constructor(public selector: string) {
