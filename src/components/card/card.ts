@@ -11,13 +11,15 @@ export class Card extends Component {
 
   private createTemplate() {
     return `
+     <div class="card character__card">
+          <img src="./public/assets/no-one.jpg" alt="Nombre y familia del personaje"
           <div class="card-body">
-            <h2 class="character__name card-title h4">'${allCharacters[].name} and ${allCharacters[].family}'</h2>
+            <h2 class="character__name card-title h4">Nombre y familia</h2>
             <div class="character__info">
               <ul class="list-unstyled">
-                <li>Age: ${allCharacters[].age}</li>
+                <li>Edad: X años</li>
                 <li>
-                  Alive or not:
+                  Estado:
                   <i class="fas fa-thumbs-down"></i>
                   <i class="fas fa-thumbs-up"></i>
                 </li>
@@ -25,12 +27,12 @@ export class Card extends Component {
             </div>
             <div class="character__overlay">
               <ul class="list-unstyled">
-                <li>Reign Years: X</li>
-                <li>Weapon: XXX</li>
-                <li>Hability: X</li>
-                <li>Besaculos: X</li>
-                <li>Counselor of: X</li>
-                <li>Serves: X</li>
+                <li>Años de reinado: X</li>
+                <li>Arma: XXX</li>
+                <li>Destreza: X</li>
+                <li>Peloteo: X</li>
+                <li>Asesora a: X</li>
+                <li>Sirve a: X</li>
               </ul>
               <div class="character__actions">
                 <button class="character__action btn">habla</button>
@@ -38,6 +40,8 @@ export class Card extends Component {
               </div>
             </div>
           </div>
+          <i class="emoji"></i>
+        </div>
     `;
   }
 
